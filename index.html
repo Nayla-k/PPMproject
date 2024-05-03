@@ -7,26 +7,116 @@
   <title>HuffPost - Breaking News, U.S. and World News | HuffPost</title>
   <link  href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
   <link  href="styles.css" rel="stylesheet">
+
 </head>
+
 <body>
 
 <header>
-
-<!-- Collapsible Section (Always visible) -->
-  <div id="collapsedSection" class="bg-black p-4">
+  <!-- Collapsible Section (Always visible) -->
+  <div id="collapsedSection" class="bg-black p-4 d-sm-block">
+    <!-- Carousel of Websites -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="WebsitesImages.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+       
   </div>
+
+      
+  
+    
+        
+    
+  
+  </div>         
+
+  <!--NAVBAR-->
   <nav id="navbar" class="navbar navbar-black bg-black border-top border-bottom"> 
     <div class="container-fluid">
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="mx-auto d-lg-flex d-block flex-lg-row justify-content-lg-center">
         <a class="navbar-brand" href="#">
           <img src="HuffpostSimbol.svg" alt="Logo" width="50" height="50">
         </a>
       </div>
-      <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+
+      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" >
         </button>
@@ -37,25 +127,52 @@
           <div class="row">
             <div class="col">
               <ul>
-                <li class="element">Row 1 - Column 1 - Item 1</li>
-                <li class="element">Row 1 - Column 1 - Item 2</li>
-                <li class="element">Row 1 - Column 1 - Item 3</li>
-                <!-- Add more items as needed -->
+                <li class="elementH">NEWS</li>
+                <li class="element">U.S. NEWS</li>
+                <li class="element">Business</li>
+                <li class="element">Health</li>
+                <li class="element">Crime</li>
+                <li class="elementH">NEWS</li>
+                <li class="element">U.S. NEWS</li>
+                <li class="element">Business</li>
+                <li class="element">Health</li>
+                <li class="element">Crime</li>
               </ul>
             </div>
             <div class="col">
               <ul>
-                <li class="element">Row 1 - Column 2 - Item 1</li>
-                <li class="element">Row 1 - Column 2 - Item 2</li>
-                <li class="element">Row 1 - Column 2 - Item 3</li>
-                <!-- Add more items as needed -->
+                <span></span>
+                <li class="elementBH">Align</li>
+                <li class="element">World News</li>
+                <li class="element">Environment</li>
+                <li class="element">Social Justice</li>
+                <li class="elementBH">Align</li>
+                <li class="element">World News</li>
+                <li class="element">Environment</li>
+                <li class="element">Social Justice</li>
               </ul>
             </div>
         </div>
       </div>
     </div>
+
+    <div class="d-flex">
+      <button class="btn btn-login">Log In</button>
+    </div>
+    <div class="Support-Button">
+      <button class="btn btn-SupportUs">Support us</button>
+    </div>
+
   </nav>
-  <div id="collapsedSection" class="bg-black p-4">
+  <div id="collapsedSection" class="bg-black p-4" style="text-align: center;">
+    <span class="navbar-item">NEWS</span>
+    <span class="navbar-item">POLITICS</span>
+    <span class="navbar-item">ENTERTAINMENT</span>
+    <span class="navbar-item">LIFE</span>
+    <span class="navbar-item">PERSONAL</span>
+    <span class="navbar-item">VOICES</span>
+    <span class="navbar-item">SHOPPING</span>
+    <span class="navbar-item">PLAY PIRAMID SCHEME</span>
   </div>
 
 
@@ -76,6 +193,8 @@
     }
   });
 </script>
+
+
 
 
 
