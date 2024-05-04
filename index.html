@@ -14,7 +14,7 @@
 
 <header>
   <!-- Collapsible Section (Always visible) -->
-  <div id="collapsedSection" class="bg-black p-4 d-sm-block">
+  <div id="collapsedSection" class="collapsibleSection bg-black p-4 d-sm-block">
     <!-- Carousel of Websites -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -23,43 +23,43 @@
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">The Funniest Tweets From Parents This Week</p>
               </div>
             </div>
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                <p class="card-text">Mary Trump Flags 'Really Troubling' Sign About Her Uncle's Trial</p> 
               </div>
             </div>
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                <p class="card-text">Ex-Strategist Says Trump Is Jonesing For 1 Thing In Court: ‘It’s Probably Killing Him’</p> 
               </div>
             </div>
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                <p class="card-text">Viral Video Shows Florida Boaters Dumping Trash Into The Ocean</p> 
               </div>
             </div>
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                <p class="card-text">Jimmy Fallon Reads Out Trump’s ‘Handwritten Notes’ From Court</p> 
               </div>
             </div>
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                <p class="card-text">Sea Lions Storm San Francisco's Pier 39 In Massive Numbers For 1 Thing Only</p> 
               </div>
             </div>
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                <p class="card-text">Critics Rip Trump's Visit With New York Firefighters Over 1 Burning Red Blunder</p> 
               </div>
             </div>
           </div>
@@ -69,13 +69,13 @@
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Legal Analyst Spots ‘Weirdest Moment’ Yet Of Trump Trial</p>
               </div>
             </div>
             <div class="card">
               <img src="WebsitesImages.svg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">We Shop For A Living And These Are Our Favorite Products Ever</p>
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@
     </div>
 
   </nav>
-  <div id="collapsedSection" class="bg-black p-4" style="text-align: center;">
+  <div id="secondary-navbar" class="secondary-navbar bg-black p-4 " style="text-align: center;">
     <span class="navbar-item">NEWS</span>
     <span class="navbar-item">POLITICS</span>
     <span class="navbar-item">ENTERTAINMENT</span>
@@ -177,7 +177,15 @@
 
 
 </header>
-
+<body>
+  <div id="context-container">
+    <h1 class="b-headline"><strong>HICKS TAKES THE STAND</strong></h1>
+    <p class="headline"><strong>BREAKS DOWN IN TEARS</strong></p>
+    <div class="middle-container">
+      <img src="MiddleImage.svg" alt="MiddleImage" class="middle-img">
+    </div>
+  </div>
+</body>
 <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
 
 <script>
@@ -192,6 +200,30 @@
       collapsedSection.style.display = 'block'; // Show the collapsed section
     }
   });
+
+window.addEventListener('scroll', function() {
+  var secondarynavbar = document.getElementById('secondary-navbar');
+  var scrollPosition = window.scrollY;
+
+   // Adjust this value as needed to determine when the navbar should become fixed
+  var threshold = 300;
+
+  if (scrollPosition > threshold) {
+    secondarynavbar.classList.add('fixed');
+    if (!secondarynavbar.querySelector('img')) {
+    var imageSrc ='HuffpostSimbol.svg' ; // Replace with your image path
+    var image = document.createElement('img');
+    
+    image.src=imageSrc;
+    secondarynavbar.prepend(image);
+   }
+  } else {
+    secondarynavbar.classList.remove('fixed');
+    var image = secondarynavbar.querySelector('img');
+    if (image) image.remove();
+  }
+
+});
 </script>
 
 
