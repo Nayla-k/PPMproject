@@ -266,7 +266,6 @@
 
 
 
-
 /*BODY CSS*/
 .context-container{
   max-width: 90%; /* Adjust the maximum width of the container */
@@ -335,80 +334,148 @@
   height: auto; /* Maintain aspect ratio */
   width: auto; /* Allow image to shrink on smaller screens */
 }
-.image-container-horizontal {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2rem;
-}
 
-.image-container-horizontal img {
-  flex-basis: calc(33.333% - 2rem);
-  margin-bottom: 2rem;
-}
-
-.image-container-vertical {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
-
-.image-container-vertical img {
-  flex-basis: calc(100% - 2rem);
-  margin-bottom: 2rem;
-}
-.title{
-  align-items: center;
-  display: flex;
+.grid-title {
+  position: absolute; /* Position title absolutely */
+  top: 0; /* Position title at the top */
+  left: 50%; /* Position title at the center horizontally */
+  transform: translateX(-50%); /* Center title horizontally */
+  font-size: 1.5rem; /* Adjust title font size */
+  text-align: center; /* Center title text */
+  margin-bottom: 24px; /* Add space below title */
   font-family: ProximaNovaCond, ProximaNovaCondFallback, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  justify-content: center;
   letter-spacing: .5px;
   line-height: 24px;
-  margin-bottom: 24px;
-  margin-left:80px;
   text-transform: uppercase;
+  text-align: center; /* Center title text */
+  margin-top: 20px;
 }
-
-
 
 .card-deck {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Initially, 4 cards per row */
+  gap: 10px; /* Space between cards */
+  justify-content: center; /* Center the grid horizontally */
+}
+.Maincard:nth-child(-n+4) {
+  margin-top: 60px; /* Add a different margin top for the first row */
+}
+.Mainimage-container-horizontal {
+  position: relative;
   display: flex;
+  justify-content: center; /* Center the container horizontally */
+  padding-left: 20px; /* Add a little left padding */
+  padding-right: 20px; /* Add a little right padding */
+  width: 80%; /* Set the width of the container to 80% of the parent container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+.image-container {
+  height: 40%; /* Set a fixed height for the image container */
+  width: 100%;
+  overflow: hidden; /* Hide any parts of the image that overflow the container */
 }
 
-.card {
-  flex: 0 0 calc(20%); /* Set the width of each card to be 30% of the container width with space between */
-  margin-right: 20px; /* Add space between cards */
+.Maincard {
+  width: calc(90% - 10px); /* Set a fixed width for each card */
+  margin-right: 10px; /* Add space between cards */
   border-radius: 0; /* Remove rounded borders */
   border: none; /* Add border with desired color */
-  margin-top:10px;
 }
 
-.card:last-child {
-  margin-right: 0; /* Remove margin from the last card */
-}
-
-.image-container {
-  width: 100%; /* Make image container fill the entire card width */
-  border-radius: 0;
-}
 
 .card-img-top {
-  width: 100%; /* Make the image fill the entire image container width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 0;
+  object-fit: cover; /* Make sure the image covers the entire container */
+  height: 100%; /* Make the image take up the full height of the container */
+  width: 100%; /* Make the image take up the full width of the container */
 }
 
-.card-body {
-  padding: 1rem; /* Add padding inside the card body */
+.Maincard-body {
   width: 100%; /* Make the card body fill the entire card width */
+  height: 200px; /* Set a fixed height for the card body */
+  overflow-y: auto; /* Add a scrollbar for the vertical overflow */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide the scrollbar in IE */
+  color: #000;
+  font-family: ProximaNovaCond, ProximaNovaCondFallback, sans-serif;
+  font-size: 1.00rem;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
-.card-title,
-.card-text {
+.Maincard-title,
+.Maincard-text {
   margin-bottom: 0.5rem; /* Add some spacing between title and text */
 }
-.websitesline{
+.Maincard-title{
+  font-family: ProximaNovaCond, ProximaNovaCondFallback, sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .025rem;
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-transform: uppercase;
+  align-items: start;
+  color: #333;
+  --font-min: 12px;
+  --font-max: 20px;
+
+}
+.horizontal-card{
+  width:auto; /* Set a fixed width for each card */
+  margin-right: 0px; /* Add space between cards */
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  border-radius: 0; /* Remove rounded borders */
+  border: none; /* Add border with desired color */
+  border-bottom: 1px solid #ced4da;
+}
+
+@media (max-width: 1400px) {
+  .vertical-container{
+    display: none;
+  }
+  .Mainimage-container-horizontal {
+    width: 100%; /* Increase container width on smaller screens */
+  }
+  .card-deck {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+  }
+  .Maincard {
+    width: calc(100% - 10px); /* Set a fixed width for each card on smaller screens */
+  }
+  .grid-title {
+    font-size: 1.3rem; /* Adjust title font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .Mainimage-container-horizontal {
+    width: 100%; /* Increase container width on smaller screens */
+  }
+  .card-deck {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row on even smaller screens */
+  }
+  .Maincard {
+    width: calc(100% - 10px); /* Set a fixed width for each card on even smaller screens */
+    margin-right: 0; /* Remove margin between cards */
+  }
+}
+@media (max-width: 576px) {
+  .col-lg-3 {
+    flex: 0 0 100%; /* Show one card per row on even smaller screens */
+  }
+}
+
+
+
+
+
+
+
+.websitesline {
+  width: 100%;
+  height: 1px;
   border: 1px solid #ced4da;
+  margin: 0;
 }
