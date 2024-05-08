@@ -112,6 +112,7 @@
 
 }
 
+
 .line{
   border:none;
   border-top: 2px solid whitesmoke;
@@ -128,7 +129,7 @@
   list-style-type: none;
 }
 .elementH{
-  font-family: Montserrat, sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 700;
@@ -151,7 +152,7 @@
 }
 .element{
   list-style-type: none;
-  font-family: ProximaNova;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.27;
   padding-right: 5px;
@@ -176,6 +177,60 @@
   list-style-type: none;
   cursor: pointer;
 }
+.notificationmenu{
+  background-color: transparent;
+  border: none;
+}
+.notificationmenu:hover{
+  background-color: transparent;
+  border: none;
+}
+.notificationmenu:active,
+.notificationmenu:focus {
+  background-color: transparent !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+  /* Style the dropdown menu */
+.dropdown-menu {
+  background-color:rgb(62, 62, 62) ; /* Set background color to black */
+  color: white; /* Set text color to white */
+  background-origin: 0;
+  padding: 10px; /* Adjust the padding to make the dropdown bigger */
+  border-radius: 0; /* Remove rounded borders */
+  width:400px;
+  height:600px;
+  left: -300%; /* Position the menu to the left of the button */
+  transform: translateX(-70%); /* Move the menu further to the left */
+}
+@media (max-width: 1400px) {
+ 
+}
+.close-icon {
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23acacac'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  position: absolute;
+  top: 5%; /* Align vertically */
+  right: 10px; /* Adjust as needed */
+  transform: translateY(-50%); /* Center vertically */
+  cursor: pointer;
+  font-size: 20px; /* Adjust the font size */
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  height:20px;
+  width:20px;
+}
+.close-icon:focus,
+.close-icon:active {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.dropdown-toggle::after {
+  display: none;
+}
+
 .btn-login{
   color:white;
   font-weight: bold;
@@ -183,24 +238,19 @@
 .btn-login:hover{
   color:rgb(13, 190, 152);
 }
-
-.btn-SupportUs{
-  background-color:rgb(13, 190, 152) ;
-  color: black;
-  font-family: ProximaNova;
+.support-us-button {
+  background-color:rgb(13, 190, 152) ; /* blue color */
+  color: #000; /* black text color */
+  border-radius: 25px; /* full rounded borders */
+  border: none;
   font-size: .875rem;
   font-weight: 700;
-  text-decoration: none;
 }
-.btn-SupportUs:hover{
-  background-color:rgb(13, 190, 152) ;
-  color: black;
-  font-family: ProximaNova;
-  font-size: .875rem;
-  font-weight: 700;
-  text-decoration: none;
+.support-us-button:hover{
+  background-color:rgb(13, 190, 152) ; /* blue color */
+  color: #000; /* black text color */
+  border-radius: 25px; /* full rounded borders */
 }
-
 
 /* Carousel CSS */
 .cards-wrapper{
@@ -343,14 +393,17 @@
   font-size: 1.5rem; /* Adjust title font size */
   text-align: center; /* Center title text */
   margin-bottom: 24px; /* Add space below title */
-  font-family: ProximaNovaCond, ProximaNovaCondFallback, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: .5px;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center; /* Center title text */
-  margin-top: 20px;
+  margin-top: 60px;
+}
+.barra{
+  color: blue;
 }
 
 .card-deck {
@@ -359,8 +412,8 @@
   gap: 10px; /* Space between cards */
   justify-content: center; /* Center the grid horizontally */
 }
-.Maincard:nth-child(-n+4) {
-  margin-top: 60px; /* Add a different margin top for the first row */
+.Maincard:nth-child(-n+2) {
+  margin-top: 100px; /* Add a different margin top for the first row */
 }
 .Mainimage-container-horizontal {
   position: relative;
@@ -382,6 +435,7 @@
   margin-right: 10px; /* Add space between cards */
   border-radius: 0; /* Remove rounded borders */
   border: none; /* Add border with desired color */
+  
 }
 
 
@@ -421,14 +475,34 @@
   --font-max: 20px;
 
 }
+
+
 .horizontal-card{
-  width:auto; /* Set a fixed width for each card */
+  width:65%; /* Set a fixed width for each card */
   margin-right: 0px; /* Add space between cards */
-  margin-bottom: 0px;
   padding-bottom: 0;
   border-radius: 0; /* Remove rounded borders */
   border: none; /* Add border with desired color */
   border-bottom: 1px solid #ced4da;
+  margin: 24px 0 0;
+  padding-bottom: 24px;
+
+}
+.horizontalimage-container{
+  height: 100%; /* Set a fixed height for the image container */
+  width: 100%;
+  padding: 5px;
+}
+.horizontalcard-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.horizontalcard-body{
+  padding: 0;
+  --font-min: 12px;
+  --font-max: 20px;
 }
 
 @media (max-width: 1400px) {
@@ -468,13 +542,8 @@
 }
 
 
-
-
-
-
-
 .websitesline {
-  width: 100%;
+  width: 50%;
   height: 1px;
   border: 1px solid #ced4da;
   margin: 0;
