@@ -31,26 +31,54 @@
   width: 100%;
   background-color: #000000; /* Change to your desired background color */
   padding: 1rem; /* Adjust padding as needed */
-  z-index: 1000; /* Ensure it's above other content */
   display: flex;
-  justify-content: center; /* Center items horizontally */
+  position: relative;
+  justify-content: space-between; /* Center items horizontally */
   align-items: center; /* Center items vertically */
-
+  margin-bottom: 0;
+  margin-top:0;
 }
 
-.secondary-navbar-item {
+.navbar-items {
+  display: flex;
+  align-items: center;
   text-align: center;
-  margin-right: 10px;
   font-weight: bold;
   color: whitesmoke;
+  padding-left: 20%;
+  flex: 1; /* take available space */
+  flex-wrap: wrap; /* wrap items when screen size decreases */
+  
 }
-
+.secondary-navbar-item{
+  font-size: small;
+  margin-left: 15px;
+}
 .secondary-navbar-item:hover{
   text-decoration: underline;
   list-style-type: none;
   cursor: pointer;
 }
+.Edition{
+  text-decoration: underline;
+  list-style-type: none;
+  cursor: pointer;
+  color: rgb(13, 190, 152);
+  background-color: transparent;
+  border: none;
+  font-size: small;
+}
 
+.support-us-btn{
+  background-color:transparent; /* blue color */
+  color: rgb(13, 190, 152); /* black text color */
+  border: none;
+  font-size: .875rem;
+  font-weight: 700;
+  right: 0;
+  padding-right: 0;
+
+}
 .secondary-navbar.fixed {
   position: fixed;
   top: 0;
@@ -59,7 +87,43 @@
 .secondary-navbar img {
   align-self: flex-start; /* Align the image to the start (left) */
 }
-@media (max-width: 900px) {
+.dropdown-item{
+  align-items: center;
+  border-bottom: 1px solid #626262;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 22px 16px;
+  color: white;
+  font-weight: bold;
+}
+.dropdown-item:hover {
+  color: white; /* This ensures that the color reverts to its initial state on hover */
+  background-color: transparent;
+}
+.dropdown-item-title{
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 0 22px 16px;
+  color: white;
+  font-weight: bold;
+}
+.dropdown-item-title:hover{
+  text-decoration: underline;
+}
+.dropdown-item-content{
+  align-items: center;
+  border-bottom: 1px solid #626262;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 22px 16px;
+  color: white;
+}
+.dropdown-item-content:hover{
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
   .secondary-navbar {
     display: none; /* Hide it when screen width is 768px or smaller */
   }
@@ -156,6 +220,7 @@
   font-size: 16px;
   line-height: 1.27;
   padding-right: 5px;
+  font-weight: lighter;
 
 }
 .element:hover{
@@ -204,9 +269,12 @@
   left: -300%; /* Position the menu to the left of the button */
   transform: translateX(-70%); /* Move the menu further to the left */
 }
-@media (max-width: 1400px) {
- 
+.container-dropdown-menu{
+  width:100%;
+  height:500px;
+  overflow-y: auto;
 }
+
 .close-icon {
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23acacac'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
   position: absolute;
@@ -250,6 +318,15 @@
   background-color:rgb(13, 190, 152) ; /* blue color */
   color: #000; /* black text color */
   border-radius: 25px; /* full rounded borders */
+}
+@media (max-width: 1200px) {
+  .support-us-button {
+    background-color:transparent; /* blue color */
+    color: rgb(13, 190, 152); /* black text color */
+    border: none;
+    font-size: .875rem;
+    font-weight: 700;
+  }
 }
 
 /* Carousel CSS */
@@ -548,3 +625,78 @@
   border: 1px solid #ced4da;
   margin: 0;
 }
+
+.midlle-vertical-container{
+
+}
+.middle-vertical-card-column{
+  margin-left: 50%;
+  width: 200%;
+  height:150%;
+}
+.middle-horizontal-card{
+  width:100%; /* Set a fixed width for each card */
+  margin-right: 0px; /* Add space between cards */
+  padding-bottom: 0;
+  border-radius: 0; /* Remove rounded borders */
+  border: none; /* Add border with desired color */
+  border-bottom: 1px solid #ced4da;
+  margin: 24px 0 0;
+  padding-bottom: 24px;
+  height: 150%;
+
+}
+.middle-horizontalimage-container{
+  height: 100%; /* Set a fixed height for the image container */
+  width: 50%;
+  padding: 5px;
+}
+.middle-horizontalcard-img-top {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+
+}
+.middle-horizontalcard-body{
+  padding: 0;
+  --font-min: 12px;
+  --font-max: 20px;
+  width:70%;
+  margin-left: 20%;
+}
+.middle-horizontalcard-top{
+  font-family: sans-serif;
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: .025rem;
+  margin-bottom: 7px;
+  margin-top: 13px;
+  text-transform: uppercase;
+  color: #333;
+}
+.middle-horizontalcard-title{
+  color: #000;
+  font-family: sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.07;
+}
+.middle-horizontalcard-title:hover{
+  text-decoration: underline;
+}
+.middle-horizontalcard-content{
+  --font-min: 12px;
+  --font-max: 20px;
+  font-family: sans-serif;
+  color: #000;
+  font-family: ProximaNova;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-top: 4px;
+  margin-top: 8px;
+}
+.second-middle-container{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
