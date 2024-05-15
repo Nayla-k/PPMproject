@@ -784,23 +784,18 @@
 }
 
 /*FOOTER*/
-footer {
+.footer {
   background-color: black;
-  text-align: center;
-  font-size: 16px; /* Set the default font size */
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  display: end;
-  padding-right: 0;
-  margin-right: 0;
-}
-
-.footer-text {
+  height:100%;
   width: 100%;
-  color: #fff;
+}
+
+.s-footer-group{
+  color:rgba(199, 199, 199, 0.855);
+  margin-left: 0;
+  margin-top: 30px;
+  margin-right: 0;
+  font-size: .60rem;
   font-family: sans-serif;
   font-weight: 700;
   letter-spacing: .02687rem;
@@ -808,46 +803,76 @@ footer {
   flex-wrap: wrap;
   line-height: 0.5;
   text-align: left;
-  
+  width:100%;
 }
-.s-footer-group{
-  color:rgba(199, 199, 199, 0.855);
-  margin-right: 2%;
-  margin-left: 0;
-  margin-top: 30px;
-  font-size: .75rem;
+
+.footer-element {
+  flex-basis: 33.3%;
+  white-space: nowrap;
 }
 .footer-element:hover{
   color:rgb(13, 190, 152) ;
   cursor: pointer;
 }
 .footer-group {
-  margin-right: 2%;
+  color: #fff;
   margin-left: 0;
   margin-top: 30px;
   font-size: .75rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: .02687rem;
+  line-height: 0.5;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom:10%;
+  margin-right:0.5%;
+  width:100%;
+
 }
 
 .footer-image {
-  width: 100px;
+  width: auto;
   height: auto;
-  margin-left:0.5%;
-  margin-right: 5%;
+  padding: 0;
+  margin-top: 30%;
+  margin-left: 10%;
 }
 
-
-@media (max-width: 768px) {
-  footer {
-    font-size: 14px; /* Reduce the font size for screens up to 768px wide */
+@media(max-width:1200px){
+  .footer-element{
+    font-size: 8px;
   }
+  
 }
+@media(max-width:963px){
 
-@media (max-width: 480px) {
-  footer {
+}
+@media (max-width: 600px) {
+
+  .footer {
     font-size: 12px; /* Reduce the font size for screens up to 480px wide */
   }
+  
+  .top-footer-grid{
+    margin-top: 10px;
+  }
+  .footer-image {
+    height: auto;
+    margin-left:2%;
+    margin-right: 8%;
+    margin-top: 0;
 
+  }
   .footer-group {
     width: 100%; /* Make each group take up the full width of the footer */
   }
+  .footer-element{
+    margin-right: 2%;
+  }
+}
+.container{
+  max-width: 100% !important;
 }

@@ -593,58 +593,54 @@
 </body>
 
 
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 top-footer-grid">
+        <div class="footer-image">
+          <img src="HuffpostSimbol.svg" alt="Footer Image" id="footer-image">
+        </div>
+      </div>
+      <div class="col-md-4 footer-grid">
+        <div class="footer-group">
+          <p class="footer-element">NEWS</p>
+          <p class="footer-element">LIFE</p>
+          <p class="footer-element">SHOPPING</p>
+          <p class="footer-element">POLITICS</p>
+          <p class="footer-element">VOICES</p>
+          <p class="footer-element">NEWSLETTERS</p>
+          <p class="footer-element">ENTERTREINMENT</p>
+          <p class="footer-element">HUFFPOST PERSONAL</p>
+          <p class="footer-element"></p>
+          
+          
+          
+        </div>
+      </div>
+      <div class="col-md-5 footer-grid" id="last-grid">
+        <div class="s-footer-group">
+          <p class="footer-element">ABOUT US</p>
+          <p class="footer-element">CAREERS</p>
+          <p class="footer-element">ACCESSIBILITY STATEMENT</p>
+          <p class="footer-element">ADVERTISE</p>
+          <p class="footer-element">USER AGREEMENT</p>
+          <p class="footer-element">PRIVACY POLICY</p>
+          <p class="footer-element">CONTACT US</p>
+          <p class="footer-element">COMMENT POLICY</p>
+          <p class="footer-element">CONSENT PREFERENCES</p>
+          <p class="footer-element">RSS</p>
+          <p class="footer-element">DMCA POLICY</p>
+          <p class="footer-element">MANAGE PREFERENCES</p>
+          <p class="footer-element">FAQ</p>
+          <p class="footer-element">HUFFPOST PRESS ROOM</p>
 
 
-
-<footer>
-  <div class="footer-content">
-    <img src="HuffpostSimbol.svg" alt="Footer Image" class="footer-image" id="footer-image">
-    <div class="footer-text">
-      <div class="footer-group">
-        <p class="footer-element">NEWS</p>
-        <p class="footer-element">POLITICS</p>
-        <p class="footer-element">ENTERTAINMENT</p>
-        
+            
+        </div>
       </div>
-      <div class="footer-group">
-        <p class="footer-element">LIFE</p>
-        <p class="footer-element">VOICES</p>
-        <p class="footer-element">HUFFPOST PERSONAL</p>
-        
-        
-      </div>
-      <div class="footer-group">
-        <p class="footer-element">SHOPPING</p>
-        <p class="footer-element">NEWSLETTERS</p>
-        
-        
-      </div>
-      <div class="s-footer-group">
-        <p class="footer-element">ABOUT US</p>
-        <p class="footer-element">ADVERTISE</p>
-        <p class="footer-element">CONTACT US</p>
-        <p class="footer-element">RSS</p>
-        <p class="footer-element">FAQ</p>
-        
-      </div>
-      <div class="s-footer-group">
-        <p class="footer-element">CAREERS</p>
-        <p class="footer-element">USER AGREEMENT</p>
-        <p class="footer-element">COMMENT POLICY</p>
-        <p class="footer-element">DMCA POLICY</p>
-        <p class="footer-element">HUFFPOST PRESS ROOM</p>
-      </div>
-      <div class="s-footer-group">
-        <p class="footer-element">ACCESSIBILITY STATEMENT</p>
-        <p class="footer-element">PRIVACY POLICY</p>
-        <p class="footer-element">CONSENT PREFERENCES</p>
-        <p class="footer-element">MANAGE PREFERENCES</p>
-      </div>
-        
     </div>
   </div>
 </footer>
-
 
 
 <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
@@ -754,7 +750,7 @@ function scrollFunction() {
 // Function to check screen size and swap images
 function swapImages() {
     var image = document.getElementById('footer-image');
-    if (window.innerWidth <= 768) { // Change 768 to your desired breakpoint
+    if (  window.innerWidth <= 1300) { // Change 768 to your desired breakpoint
         image.src = 'HuffpostSimbolSmaller.svg'; // Replace with the filename of the smaller image
     } else {
         image.src = 'HuffpostSimbol.svg'; // Replace with the filename of the original image
@@ -768,6 +764,9 @@ swapImages();
 window.addEventListener('resize', function() {
     swapImages();
 });
+
+
+
 
 </script>
 
