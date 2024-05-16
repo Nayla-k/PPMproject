@@ -542,9 +542,9 @@
             </div>
             <div class="col-md-4 middle-line">
               <div class="middle-horizontalcard-body">
-                <h5 class="middle-horizontalcard-top">Politics</h5>
-                <h5 class="middle-horizontalcard-title">The ex-White House communications director ripped the former president as he rallied behind his opponent on social media.</h5>
-                <h5 class="middle-horizontalcard-content">The ex-White House communications director ripped the former president as he rallied behind his opponent on social media.</h5>
+                <h5 class="middle-horizontalcard-top">Crime</h5>
+                <h5 class="middle-horizontalcard-title">Officer Killed After Pulling Over Driver Accused Of Holding Woman Hostage In Truck</h5>
+                <h5 class="middle-horizontalcard-content">Authorities say Michael Aaron Jayne made a sharp U-turn and hit Police Sgt. Bill Hooser after a woman "escaped" from his vehicle during a traffic stop.</h5>
               </div>
             </div>
           </div>
@@ -559,9 +559,9 @@
             </div>
             <div class="col-md-4 middle-line">
               <div class="middle-horizontalcard-body">
-                <h5 class="middle-horizontalcard-top">Politics</h5>
-                <h5 class="middle-horizontalcard-title">The ex-White House communications director ripped the former president as he rallied behind his opponent on social media.</h5>
-                <h5 class="middle-horizontalcard-content">The ex-White House communications director ripped the former president as he rallied behind his opponent on social media.</h5>
+                <h5 class="middle-horizontalcard-top">Entertreinment</h5>
+                <h5 class="middle-horizontalcard-title">Sophie Turner: I ‘Hated’ Being Reduced To Just Joe Jonas’ Wife</h5>
+                <h5 class="middle-horizontalcard-content">The "Game of Thrones" star addressed her divorce for the first time in an intimate interview with British Vogue.</h5>
               </div>
             </div>
           </div>
@@ -576,9 +576,9 @@
             </div>
             <div class="col-md-4 middle-line">
               <div class="middle-horizontalcard-body">
-                <h5 class="middle-horizontalcard-top">Politics</h5>
-                <h5 class="middle-horizontalcard-title">The ex-White House communications director ripped the former president as he rallied behind his opponent on social media.</h5>
-                <h5 class="middle-horizontalcard-content">The ex-White House communications director ripped the former president as he rallied behind his opponent on social media.</h5>
+                <h5 class="middle-horizontalcard-top">Crime</h5>
+                <h5 class="middle-horizontalcard-title">A Massacre At Frank Lloyd Wright’s Home Puzzles Historians</h5>
+                <h5 class="middle-horizontalcard-content">The ax-wielding murderer also set fire to the famed architect's home during his deadly rampage.</h5>
               </div>
             </div>
           </div>
@@ -621,7 +621,7 @@
         <div class="s-footer-group">
           <p class="footer-element">ABOUT US</p>
           <p class="footer-element">CAREERS</p>
-          <p class="footer-element">ACCESSIBILITY STATEMENT</p>
+          <p class="footer-element">ACCESIBILITY STATEMENT</span></p>
           <p class="footer-element">ADVERTISE</p>
           <p class="footer-element">USER AGREEMENT</p>
           <p class="footer-element">PRIVACY POLICY</p>
@@ -640,6 +640,9 @@
       </div>
     </div>
   </div>
+  <hr class="footer-line">
+  <h5 class="footer-end">Part of HuffPost News. ©2024 BuzzFeed, Inc. All rights reserved.</h5>
+
 </footer>
 
 
@@ -750,10 +753,15 @@ function scrollFunction() {
 // Function to check screen size and swap images
 function swapImages() {
     var image = document.getElementById('footer-image');
-    if (  window.innerWidth <= 1300) { // Change 768 to your desired breakpoint
-        image.src = 'HuffpostSimbolSmaller.svg'; // Replace with the filename of the smaller image
+    if (  window.innerWidth <= 768) { // Change 768 to your desired breakpoint
+        image.src = 'HuffpostSimbol.svg'; // Replace with the filename of the smaller image
     } else {
+      if (  window.innerWidth <= 1300) { // Change 768 to your desired breakpoint
+        image.src = 'HuffpostSimbolSmaller.svg'; // Replace with the filename of the smaller image
+      }
+      else{
         image.src = 'HuffpostSimbol.svg'; // Replace with the filename of the original image
+      }
     }
 }
 
