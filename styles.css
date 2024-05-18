@@ -25,12 +25,13 @@
   border-right:none;
 }
 
+
 /* SECONDARY NAVBAR */
 .secondary-navbar {
   transition: top 0.6s ease;
   width: 100%;
-  background-color: #000000; /* Change to your desired background color */
-  padding: 1rem; /* Adjust padding as needed */
+  background-color: #000000; 
+  padding: 1rem; 
   display: flex;
   position: relative;
   justify-content: space-between; /* Center items horizontally */
@@ -70,8 +71,8 @@
 }
 
 .support-us-btn{
-  background-color:transparent; /* blue color */
-  color: rgb(13, 190, 152); /* black text color */
+  background-color:transparent; 
+  color: rgb(13, 190, 152); 
   border: none;
   font-size: .875rem;
   font-weight: 700;
@@ -85,7 +86,7 @@
   z-index: 1000; /* Ensure it's above other content */
 }
 .secondary-navbar img {
-  align-self: flex-start; /* Align the image to the start (left) */
+  align-self: flex-start; 
 }
 .dropdown-item{
   align-items: center;
@@ -98,7 +99,7 @@
   font-weight: bold;
 }
 .dropdown-item:hover {
-  color: white; /* This ensures that the color reverts to its initial state on hover */
+  color: white; 
   background-color: transparent;
 }
 .dropdown-item-title{
@@ -129,11 +130,10 @@
 }
 @media (max-width: 1000px) {
   .secondary-navbar {
-    display: none; /* Hide it when screen width is 768px or smaller */
+    display: none; 
   }
 }
 
-/* SECONDARY NAVBAR */
 
 
 
@@ -142,6 +142,7 @@
 
 
 
+/* MENU NAVBAR */
 .navbar-container {
   display: flex;
   justify-content: center; /* Center items horizontally */
@@ -179,7 +180,6 @@
   opacity:100;
 
 }
-
 
 .line{
   border:none;
@@ -233,7 +233,6 @@
   cursor:pointer
 }
 
-
 .navbar-item {
   text-align: center;
   margin-right: 10px;
@@ -261,17 +260,17 @@
   box-shadow: none !important;
 }
 
-  /* Style the dropdown menu */
+/* dropdown menu */
 .dropdown-menu {
-  background-color:rgb(62, 62, 62) ; /* Set background color to black */
-  color: white; /* Set text color to white */
+  background-color:rgb(62, 62, 62) ; 
+  color: white; 
   background-origin: 0;
-  padding: 10px; /* Adjust the padding to make the dropdown bigger */
-  border-radius: 0; /* Remove rounded borders */
+  padding: 10px; 
+  border-radius: 0; 
   width:400px;
   height:600px;
-  left: -300%; /* Position the menu to the left of the button */
-  transform: translateX(-70%); /* Move the menu further to the left */
+  left: -300%; 
+  transform: translateX(-70%);
 }
 
 .container-dropdown-menu{
@@ -284,13 +283,13 @@
 .close-icon {
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23acacac'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
   position: absolute;
-  top: 5%; /* Align vertically */
-  right: 10px; /* Adjust as needed */
+  top: 5%; 
+  right: 10px; 
   transform: translateY(-50%); /* Center vertically */
   cursor: pointer;
-  font-size: 20px; /* Adjust the font size */
-  background-color: transparent; /* Remove background color */
-  border: none; /* Remove border */
+  font-size: 20px; 
+  background-color: transparent; 
+  border: none; 
   height:20px;
   width:20px;
 }
@@ -299,7 +298,6 @@
   outline: none;
   box-shadow: none;
 }
-
 
 .dropdown-toggle::after {
   display: none;
@@ -313,22 +311,22 @@
   color:rgb(13, 190, 152);
 }
 .support-us-button {
-  background-color:rgb(13, 190, 152) ; /* blue color */
-  color: #000; /* black text color */
-  border-radius: 25px; /* full rounded borders */
+  background-color:rgb(13, 190, 152) ; 
+  color: #000; 
+  border-radius: 25px; 
   border: none;
   font-size: .875rem;
   font-weight: 700;
 }
 .support-us-button:hover{
-  background-color:rgb(13, 190, 152) ; /* blue color */
-  color: #000; /* black text color */
-  border-radius: 25px; /* full rounded borders */
+  background-color:rgb(13, 190, 152) ; 
+  color: #000; 
+  border-radius: 25px; 
 }
 @media (max-width: 1200px) {
   .support-us-button {
-    background-color:transparent; /* blue color */
-    color: rgb(13, 190, 152); /* black text color */
+    background-color:transparent; 
+    color: rgb(13, 190, 152); 
     border: none;
     font-size: .875rem;
     font-weight: 700;
@@ -339,6 +337,7 @@
     display: none;
   }
 }
+
 /* Carousel CSS */
 .cards-wrapper{
   display: flex;
@@ -357,8 +356,6 @@
   background-color: transparent;
   
 }
-
-
 .cards-wrapper img{
   width: 90%;
   box-sizing: border-box;
@@ -405,8 +402,8 @@
 
 /*BODY CSS*/
 .context-container{
-  max-width: 90%; /* Adjust the maximum width of the container */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 90%; 
+  margin: 0 auto; 
 }
 .b-headline{
   color: #000000;
@@ -469,24 +466,24 @@
 .middle-img {
   max-width: 100%; /* Ensure image does not exceed its container's width */
   height: auto; /* Maintain aspect ratio */
-  width: auto; /* Allow image to shrink on smaller screens */
+  width: auto; 
 }
 
 .grid-title {
-  position: absolute; /* Position title absolutely */
-  top: 0; /* Position title at the top */
-  left: 50%; /* Position title at the center horizontally */
-  transform: translateX(-50%); /* Center title horizontally */
-  font-size: 1.5rem; /* Adjust title font size */
-  text-align: center; /* Center title text */
-  margin-bottom: 24px; /* Add space below title */
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  font-size: 1.5rem; 
+  text-align: center; 
+  margin-bottom: 24px; 
   font-family:Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: .5px;
   line-height: 24px;
   text-transform: uppercase;
-  text-align: center; /* Center title text */
+  text-align: center;
   margin-top: 60px;
 }
 .barra{
@@ -495,9 +492,9 @@
 
 .card-deck {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Initially, 4 cards per row */
-  gap: 3px; /* Space between cards */
-  justify-content: center; /* Center the grid horizontally */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 3px; 
+  justify-content: center; 
   max-width: 90%;
   margin-right: 0;
   margin-left: 30%;
@@ -513,36 +510,36 @@
 .Mainimage-container-horizontal {
   position: relative;
   display: flex;
-  justify-content: center; /* Center the container horizontally */
-  width: 80%; /* Set the width of the container to 80% of the parent container */
-  margin: 0 auto; /* Center the container horizontally */
+  justify-content: center; 
+  width: 80%; 
+  margin: 0 auto; 
 }
 .image-container {
-  height: 40%; /* Set a fixed height for the image container */
+  height: 40%; 
   width: 100%;
-  overflow: hidden; /* Hide any parts of the image that overflow the container */
+  overflow: hidden; 
 }
 
 .Maincard {
-  width: calc(80% - 10px); /* Set a fixed width for each card */
-  border-radius: 0; /* Remove rounded borders */
-  border: none; /* Add border with desired color */
+  width: calc(80% - 10px); 
+  border-radius: 0; 
+  border: none; 
 }
 
 
 .card-img-top {
-  object-fit: cover; /* Make sure the image covers the entire container */
-  height: 100%; /* Make the image take up the full height of the container */
-  width: 100%; /* Make the image take up the full width of the container */
+  object-fit: cover; 
+  height: 100%; 
+  width: 100%; 
 }
 
 .Maincard-body {
-  width: 100%; /* Make the card body fill the entire card width */
-  height: 200px; /* Set a fixed height for the card body */
-  overflow-y: auto; /* Add a scrollbar for the vertical overflow */
-  -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide the scrollbar in IE */
+  width: 100%; 
+  height: 200px; 
+  overflow-y: auto; 
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
   color: #000;
-  font-family: ProximaNovaCond, ProximaNovaCondFallback, sans-serif;
+  font-family: sans-serif;
   font-size: 1.00rem;
   font-weight: 600;
   line-height: 1.1;
@@ -553,10 +550,10 @@
 }
 .Maincard-title,
 .Maincard-text {
-  margin-bottom: 0.5rem; /* Add some spacing between title and text */
+  margin-bottom: 0.5rem; 
 }
 .Maincard-title{
-  font-family: ProximaNovaCond, ProximaNovaCondFallback, sans-serif;
+  font-family:  sans-serif;
   font-size: .75rem;
   font-weight: 700;
   letter-spacing: .025rem;
@@ -571,7 +568,7 @@
 }
 
 .pub-grid-title{
-  font-size: 1.3rem; /* Adjust title font size */
+  font-size: 1.3rem; 
   margin-left: 90px;
   color: #000;
   padding: 0;
@@ -580,11 +577,11 @@
 }
 
 .horizontal-card{
-  width:65%; /* Set a fixed width for each card */
-  margin-right: 0px; /* Add space between cards */
+  width:65%; 
+  margin-right: 0px; 
   padding-bottom: 0;
-  border-radius: 0; /* Remove rounded borders */
-  border: none; /* Add border with desired color */
+  border-radius: 0; 
+  border: none; 
   border-bottom: 1px solid #ced4da;
   margin: 24px 0 0;
   padding-bottom: 24px;
@@ -592,7 +589,7 @@
 
 }
 .horizontalimage-container{
-  height: 100%; /* Set a fixed height for the image container */
+  height: 100%; 
   width: 100%;
   padding: 5px;
   margin-left:0;
@@ -622,16 +619,16 @@
     display: none;
   }
   .Mainimage-container-horizontal {
-    width: 100%; /* Increase container width on smaller screens */
+    width: 100%; 
   }
   .card-deck {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
   .Maincard {
-    width: calc(100% - 10px); /* Set a fixed width for each card on smaller screens */
+    width: calc(100% - 10px); 
   }
   .grid-title {
-    font-size: 1.3rem; /* Adjust title font size for smaller screens */
+    font-size: 1.3rem;
   }
 
 }
@@ -643,14 +640,14 @@
   }
 
   .Mainimage-container-horizontal {
-    width: 100%; /* Increase container width on smaller screens */
+    width: 100%; 
   }
   .card-deck {
-    grid-template-columns: repeat(1, 1fr); /* 1 card per row on even smaller screens */
+    grid-template-columns: repeat(1, 1fr); 
   }
   .Maincard {
-    width: calc(100% - 10px); /* Set a fixed width for each card on even smaller screens */
-    margin-right: 0; /* Remove margin between cards */
+    width: calc(100% - 10px); 
+    margin-right: 0; 
   }
   .col-lg-3 {
     flex: 0 0 100%; /* Show one card per row on even smaller screens */
@@ -663,7 +660,7 @@
 .second-middle-container{
   margin-bottom: 50px;
   width: 100%;
-  overflow: hidden; /* Hide any parts of the image that overflow the container */
+  overflow: hidden; 
 }
 .second-middle-image{
   width: 50%;
@@ -676,7 +673,7 @@
   width: 200%;
  }
  .middle-horizontal-card{
-  border: none; /* Add border with desired color */
+  border: none; 
   border-bottom: 1px solid #ced4da;
 
  }
@@ -730,7 +727,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 20%; /* Position 1/3 from the left border */
+  margin-left: 20%;
   padding: 0;
   margin-right: 0;
   width:50%;
@@ -741,9 +738,9 @@
 }
 
 .second-middle-img {
-  max-width: 100%; /* Ensure image does not exceed its container's width */
-  height: auto; /* Maintain aspect ratio */
-  width: auto; /* Allow image to shrink on smaller screens */
+  max-width: 100%; 
+  height: auto; 
+  width: auto; 
 }
 
 
