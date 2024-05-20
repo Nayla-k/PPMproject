@@ -657,7 +657,7 @@ const IMAGE_SRC_DESKTOP = 'HuffpostSimbol.svg';
 const IMAGE_SRC_MOBILE = 'HuffpostSimbolSmaller.svg';
 const LOGO_CONTAINER_CLASS = 'logo-container';
 const NAVBAR_LOGO_CLASS = 'navbar-logo';
-const EDITION_BUTTON_CLASS = 'Edition'; // Added a constant for the edition button class
+const EDITION_BUTTON_CLASS = 'Edition'; 
 
 // Function to create the logo container and its elements
 function createLogoContainer() {
@@ -694,17 +694,13 @@ function createSupportUsButton() {
   const supportUsBtn = document.createElement('button');
   supportUsBtn.textContent = 'Support Us';
   supportUsBtn.classList.add('support-us-btn');
-  // Add event listener if needed
-  // supportUsBtn.addEventListener('click', function() {
-  //   // Add your button click functionality here
-  // });
   return supportUsBtn;
 }
 
 // Main code
 window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
-  const threshold = 300; // Adjust this threshold value as needed
+  const threshold = 300; 
   const secondaryNavbar = document.getElementById('secondary-navbar');
   const editionButton = secondaryNavbar.querySelector(`.${EDITION_BUTTON_CLASS}`);
 
@@ -756,22 +752,22 @@ function scrollFunction() {
 // Function to check screen size and swap images
 function swapImages() {
     var image = document.getElementById('footer-image');
-    if (  window.innerWidth <= 768) { // Change 768 to your desired breakpoint
-        image.src = 'HuffpostSimbol.svg'; // Replace with the filename of the smaller image
+    if (  window.innerWidth <= 768) { 
+        image.src = 'HuffpostSimbol.svg'; 
     } else {
-      if (  window.innerWidth <= 1300) { // Change 768 to your desired breakpoint
-        image.src = 'HuffpostSimbolSmaller.svg'; // Replace with the filename of the smaller image
+      if (  window.innerWidth <= 1300) { 
+        image.src = 'HuffpostSimbolSmaller.svg'; 
       }
       else{
-        image.src = 'HuffpostSimbol.svg'; // Replace with the filename of the original image
+        image.src = 'HuffpostSimbol.svg'; 
       }
     }
 }
 
-// Call the function initially to set the correct image based on screen size
+
 swapImages();
 
-// Listen for window resize events and call the function to handle image swapping
+
 window.addEventListener('resize', function() {
     swapImages();
 });
